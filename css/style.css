@@ -1,0 +1,144 @@
+body {
+  background: rgb(40, 102, 136);
+  background: linear-gradient(
+    0deg,
+    rgba(40, 102, 136, 1) 10%,
+    rgba(21, 20, 36, 1) 96%
+  );
+}
+
+.newscontainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 882px;
+  height: 767px;
+  left: 81px;
+  top: 243px;
+
+  background: rgba(65, 147, 223, 0.12);
+  border-radius: 78px;
+
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 64px;
+  text-shadow: 0px 0px 12px rgba(31, 100, 138, 0.7);
+}
+
+.newscontainer img {
+  max-width: 700px;
+}
+
+.er-news-desc {
+  font-size: 12px;
+  font-weight: none;
+  text-transform: none;
+  text-shadow: none;
+}
+
+.er-news-desc span {
+  text-transform: uppercase;
+}
+
+.news-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.h2sale {
+  color: white;
+  text-transform: uppercase;
+}
+
+.sale-games {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bloodbornetitle {
+  color: white;
+  font-weight: bold;
+  margin: 8px 0px;
+}
+
+.gamecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 195px;
+
+  width: 1577px;
+  height: 595px;
+  border: 2px solid black;
+  border-radius: 78px;
+
+  background: rgba(65, 147, 223, 0.2);
+}
+
+.gamecontainer img {
+  border-radius: 12px;
+  max-width: 280px;
+}
+
+/* buttons below games */
+
+.atc-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.atc-container p {
+  color: white;
+  font-weight: bold;
+}
+
+.atcbutton,
+.heart-button {
+  background: linear-gradient(
+      277.54deg,
+      rgba(58, 255, 172, 0.42) 20.8%,
+      rgba(58, 255, 172, 0) 82.99%
+    ),
+    #18a2dd;
+  box-shadow: 0px 0px 4px #0084ff;
+
+  width: fit-content;
+  color: white;
+  font-weight: 700;
+  border: none;
+  transition: 0.2s ease;
+}
+
+.atcbutton:hover,
+.heart-button:hover {
+  background: linear-gradient(
+      277.54deg,
+      rgba(0, 255, 148, 0.42) 20.8%,
+      rgba(58, 255, 172, 0) 82.99%
+    ),
+    #0cb6ff;
+  box-shadow: 0px 0px 4px #56aeff;
+}
+
+.atcbutton {
+  padding: 16px 30px;
+  border-radius: 32px;
+  text-transform: uppercase;
+}
+
+.heart-button svg {
+  fill: white;
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+}
+
+.heart-button {
+  border-radius: 8px;
+}
