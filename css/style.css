@@ -78,6 +78,7 @@ body {
 .sale-games {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 8px;
 }
@@ -95,7 +96,7 @@ body {
   align-items: center;
   gap: 1%;
 
-  width: 900;
+  width: 900px;
   height: 500px;
   min-width: 90%;
   border-radius: 78px;
@@ -111,7 +112,7 @@ body {
   min-width: 60px;
 }
 
-/* buttons below games */
+/* Buttons below games */
 
 .atc-container {
   display: flex;
@@ -121,10 +122,14 @@ body {
   min-width: 20%;
 }
 
+/* Button text */
+
 .atc-container p {
   color: white;
   font-weight: bold;
 }
+
+/* Add to cart and heart button */
 
 .atcbutton,
 .heart-button {
