@@ -175,3 +175,84 @@ body {
 .heart-button {
   border-radius: 8px;
 }
+
+/* CHECKOUT PAGE */
+
+.main-checkout {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+}
+
+.main-checkout h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 700px;
+  height: 650px;
+  margin: 100px auto 0px;
+  /* left: 226px;
+  top: 380px; */
+  background: #f7fafc;
+  padding: 25px 30px;
+  border-radius: 12px;
+}
+
+.checkout-container .title {
+  font-size: 20px;
+}
+
+.checkout-container form .account-details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .account-details .input-field {
+  width: 350px;
+  padding: 5px 0px;
+}
+
+.account-details .input-field input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding-left: 16px;
+  background: rgba(226, 232, 240, 1);
+}
+
+.account-details .input-field .details {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.details {
+  padding: 8px 0px;
+  color: rgba(149, 149, 149, 1);
+  font-size: 16px;
+}
+
+.register {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.register h2 {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(45, 55, 72, 1);
+  margin-right: 60px;
+}
