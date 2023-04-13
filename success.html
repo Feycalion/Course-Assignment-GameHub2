@@ -20,12 +20,20 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <script
+      src="https://kit.fontawesome.com/2435774798.js"
+      crossorigin="anonymous"
+    ></script>
     <title>GameHub</title>
   </head>
   <body>
     <header>
-      <a title="Logo" class="logo" href="index.html">Game<span>Hub</span></a>
-      <nav>
+      <nav class="nav">
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox">
+          <i class="fas fa-bars"></i>
+        </label>
+        <a title="Logo" class="logo" href="index.html">Game<span>Hub</span></a>
         <ul class="navlinks">
           <li><a href="games.html">Games</a></li>
           <li><a href="about.html">About</a></li>
@@ -103,8 +111,26 @@
       </ul>
     </header>
     <main>
-      <h1>Thank you for your purchase!</h1>
-      <h2>A confirmation mail has been sent to your email.</h2>
+      <div class="checkout-success">
+        <h1>Thank you for your purchase!</h1>
+        <h2>A confirmation mail has been sent to your email.</h2>
+        <svg
+          width="80"
+          height="80"
+          viewBox="0 0 139 139"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M69.5 8.6875C57.4725 8.6875 45.715 12.2541 35.7144 18.9363C25.7138 25.6184 17.9194 35.116 13.3166 46.2281C8.71385 57.3401 7.50956 69.5675 9.85602 81.3639C12.2025 93.1604 17.9943 103.996 26.4991 112.501C35.0039 121.006 45.8396 126.798 57.6361 129.144C69.4326 131.49 81.6599 130.286 92.772 125.683C103.884 121.081 113.382 113.286 120.064 103.286C126.746 93.285 130.313 81.5276 130.313 69.5C130.313 53.3715 123.906 37.9036 112.501 26.4991C101.096 15.0945 85.6285 8.6875 69.5 8.6875ZM60.8125 93.7816L39.0938 72.0628L46.0003 65.1562L60.8125 79.9684L92.9997 47.7812L99.9323 54.6704L60.8125 93.7816Z"
+            fill="black"
+          />
+        </svg>
+
+        <button class="atcbutton">
+          <a href="index.html">Return to home page</a>
+        </button>
+      </div>
     </main>
     <footer>
       <a title="Logo" class="logo" href="index.html">Game<span>Hub</span></a>

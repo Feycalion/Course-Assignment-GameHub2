@@ -20,12 +20,20 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <script
+      src="https://kit.fontawesome.com/2435774798.js"
+      crossorigin="anonymous"
+    ></script>
     <title>GameHub</title>
   </head>
   <body>
     <header>
-      <a title="Logo" class="logo" href="index.html">Game<span>Hub</span></a>
-      <nav>
+      <nav class="nav">
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox">
+          <i class="fas fa-bars"></i>
+        </label>
+        <a title="Logo" class="logo" href="index.html">Game<span>Hub</span></a>
         <ul class="navlinks">
           <li><a href="games.html">Games</a></li>
           <li><a href="about.html">About</a></li>
@@ -102,14 +110,31 @@
         </li>
       </ul>
     </header>
-    <main>
+    <main class="main-contact">
       <h1>Contact us</h1>
-      <h2>
-        Got a question? Send us a message and we'll respond as soon as possible.
-      </h2>
-      <h3>Name</h3>
-      <h3>Email Address</h3>
-      <h3>Message</h3>
+      <div class="contact-container">
+        <h2>
+          Got a question? Send us a message and we'll respond as soon as
+          possible.
+        </h2>
+        <form action="#">
+          <div class="account-details">
+            <div class="input-field">
+              <span class="details">Name</span>
+              <input type="text" placeholder="John Smith" required />
+            </div>
+            <div class="input-field">
+              <span class="details">Email address</span>
+              <input type="text" placeholder="Email@myemail.com" required />
+            </div>
+            <div class="input-field">
+              <span class="details">Message</span>
+              <textarea placeholder="Type here..." required></textarea>
+            </div>
+          </div>
+        </form>
+        <button class="atcbutton">Send message</button>
+      </div>
     </main>
     <footer>
       <a title="Logo" class="logo" href="index.html">Game<span>Hub</span></a>
