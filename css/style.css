@@ -165,6 +165,7 @@ body {
 .atcbutton {
   padding: 16px 30px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .atcbutton:hover,
@@ -193,6 +194,48 @@ body {
 
 .heart-button {
   border-radius: 8px;
+}
+
+/* PRODUCT PAGE */
+
+.er-showcase {
+  display: flex;
+}
+
+.er-showcase img {
+  margin: 10px 100px;
+  position: absolute;
+  z-index: 1;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  position: relative;
+  width: fit-content;
+  height: 516px;
+  left: 836px;
+  /* top: 400px; */
+  background: rgba(9, 58, 107, 0.5);
+  padding: 34px 34px;
+  border-radius: 12px;
+  font-size: 1.4rem;
+}
+
+.product-container p {
+  color: white;
+  /* padding: 20px 12px; */
+  letter-spacing: 0.1rem;
+  max-width: 600px;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.product-container p,
+.product-container h1 {
+  margin-left: 3rem;
 }
 
 /* GAMES PAGE */
@@ -344,6 +387,61 @@ form .account-details .input-field {
   }
 } */
 
+/* ABOUT US PAGE */
+
+.about-container {
+  position: relative;
+}
+
+.about-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.about-container h1 {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  color: white;
+  font-weight: bold;
+  font-size: 48px;
+  text-shadow: 0px 0px 12px rgba(31, 100, 138, 0.7);
+}
+
+.aboutus-desc-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  position: absolute;
+  width: 500px;
+  height: 816px;
+  left: 136px;
+  top: 400px;
+  background: rgba(9, 58, 107, 0.5);
+  padding: 34px 34px;
+  border-radius: 12px;
+  font-size: 1.4rem;
+}
+
+.aboutus-desc-container p {
+  color: white;
+  padding: 20px 12px;
+  letter-spacing: 0.1rem;
+}
+
+.aboutus-desc-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-section {
+  margin: 46px 1100px;
+  min-width: 200px;
+  color: white;
+}
+
 /* CONTACT PAGE */
 
 .main-contact {
@@ -403,21 +501,63 @@ form .account-details .input-field {
   cursor: pointer;
 }
 
-/* ABOUT PAGE */
-
-.about-img {
-  height: 100%;
-  width: 100%;
-}
-
 @media (max-width: 1200px) {
   .gamecontainer {
     margin: 164px auto;
+    flex-direction: column;
   }
 
   .browse-games {
     margin: -84px 46px;
     position: absolute;
     min-width: 520px;
+  }
+
+  .about-container h1,
+  .aboutus-desc-container,
+  .map-section {
+    position: relative;
+  }
+
+  .about-container h1 {
+    top: 50px;
+  }
+
+  .aboutus-desc-container {
+    top: 80px;
+  }
+
+  .map-section {
+    margin: 160px 100px;
+  }
+
+  .map-section h2 {
+    margin: 0 200px;
+    min-width: 200px;
+  }
+
+  /* .aboutpage .mapsection {
+    display: flex;
+    flex-direction: row;
+  } */
+}
+
+@media (max-width: 768px) {
+  .gamecontainer {
+    gap: 1rem;
+    width: fit-content;
+    border-radius: 0;
+    padding: 10px;
+    margin: 164px 0px;
+    background: rgba(65, 147, 223, 0.2);
+  }
+
+  .sale-games {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
   }
 }

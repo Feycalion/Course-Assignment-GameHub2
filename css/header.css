@@ -13,6 +13,7 @@ header {
   position: relative;
   border-bottom: 1px solid rgba(61, 139, 255, 0.65);
   box-shadow: 0px 2px 8px rgba(61, 139, 255, 0.43);
+  padding: 16px 80px;
   /* padding: 20px;
   text-align: center;
   position: fixed;
@@ -76,10 +77,6 @@ header label,
 
 /* burger menu test end - cont at media query */
 
-header {
-  padding: 16px 80px;
-}
-
 .navlinks,
 .icons,
 header {
@@ -137,11 +134,17 @@ header {
 @media (max-width: 768px) {
   header {
     position: relative;
+    padding: 20px 10px;
+  }
+
+  nav {
+    padding: 0;
   }
 
   .navlinks {
     display: none;
-    padding: 34px 80px;
+    padding: 34px 10px;
+    z-index: 9;
   }
 
   #menu-checkbox:checked ~ .navlinks {
@@ -161,7 +164,6 @@ header {
     display: block;
     color: white;
     font-size: 1.5rem;
-    margin: 0 20px;
   }
 
   .searchbar {
