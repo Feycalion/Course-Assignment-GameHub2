@@ -30,7 +30,7 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 1rem;
-  width: 40%;
+  width: 600px;
   height: 560px;
   min-width: 400px;
   position: relative;
@@ -250,6 +250,11 @@ body {
   position: absolute;
 }
 
+.gamecontainer h2 {
+  color: white;
+  text-shadow: 0px 0px 12px rgba(31, 100, 138, 0.7);
+}
+
 .game-desc {
   color: white;
   margin: 20px 0;
@@ -257,10 +262,8 @@ body {
 
 /* CHECKOUT PAGE */
 
-.main-checkout {
+.checkout-section {
   display: flex;
-  flex-direction: row;
-  /* justify-content: center; */
 }
 
 .main-checkout h1 {
@@ -272,15 +275,15 @@ body {
 .checkout-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   align-items: center;
-  width: 700px;
-  height: 650px;
-  margin: 100px auto 0px;
+  width: fit-content;
+  height: fit-content;
+  margin: 100px auto 100px;
   /* left: 226px;
   top: 380px; */
   background: #f7fafc;
-  padding: 25px 30px;
+  padding: 36px 126px;
   border-radius: 12px;
 }
 
@@ -288,7 +291,8 @@ body {
   font-size: 20px;
 }
 
-.checkout-container form .account-details {
+.checkout-container form .account-details,
+.checkout-container form .payment-options {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -296,12 +300,14 @@ body {
   margin: 20px 0 12px 0;
 }
 
-form .account-details .input-field {
+form .account-details .input-field,
+.payment-options .input-field {
   width: 350px;
   padding: 5px 0px;
 }
 
-.account-details .input-field input {
+.account-details .input-field input,
+.payment-input {
   height: 45px;
   width: 100%;
   outline: none;
@@ -311,7 +317,8 @@ form .account-details .input-field {
   background: rgba(226, 232, 240, 1);
 }
 
-.account-details .input-field .details {
+.account-details .input-field .details,
+.payment-options .input-field .details {
   display: block;
   margin-bottom: 5px;
 }
@@ -327,6 +334,7 @@ form .account-details .input-field {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 64px;
 }
 
 .register h2 {
@@ -334,6 +342,49 @@ form .account-details .input-field {
   font-size: 16px;
   color: rgba(45, 55, 72, 1);
   margin-right: 60px;
+}
+
+.register .atcbutton {
+  text-transform: none;
+}
+
+.payment-input {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.payment-input img {
+  padding: 10px 16px;
+}
+
+.payment-options {
+  margin: 16px;
+}
+
+.confirm-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  width: fit-content;
+  height: fit-content;
+  margin: 100px auto 100px;
+  /* left: 226px;
+  top: 380px; */
+  background: #f7fafc;
+  padding: 36px 0px 0px 0px;
+  border-radius: 12px;
+}
+
+.confirm-container img {
+  width: 400px;
+  padding: 36px;
+  border-radius: 48px;
+}
+
+.confirm-container .right {
+  margin-left: auto;
 }
 
 /* CHECKOUT SUCCESS PAGE */
@@ -501,10 +552,24 @@ form .account-details .input-field {
   cursor: pointer;
 }
 
+/* MEDIA 1200 CUTOFF */
+
 @media (max-width: 1200px) {
   .gamecontainer {
     margin: 164px auto;
     flex-direction: column;
+  }
+
+  .bloodbornetitle {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center;
+    justify-content: center; */
+    color: white;
+    font-weight: bold;
+    margin: 8px 0px;
+    font-size: 24px;
+    letter-spacing: 0.1rem;
   }
 
   .browse-games {
@@ -542,13 +607,59 @@ form .account-details .input-field {
   } */
 }
 
+/* MOBILE CUTOFF */
+
 @media (max-width: 768px) {
-  .gamecontainer {
-    gap: 1rem;
-    width: fit-content;
+  .newscontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1;
+    width: 100%;
+    height: 460px;
+    min-width: 0px;
+    position: relative;
+    z-index: 1;
     border-radius: 0;
     padding: 10px;
-    margin: 164px 0px;
+    margin: 184px 0 0 0px;
+
+    background: none;
+  }
+
+  .h2sale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 48px;
+    text-shadow: 0px 0px 12px rgba(31, 100, 138, 0.7);
+    margin: 36px 0;
+    /* padding-top: 20px; */
+    position: relative;
+  }
+
+  .bloodbornetitle {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center;
+    justify-content: center; */
+    color: white;
+    font-weight: bold;
+    margin: 8px 0px;
+    font-size: 24px;
+    letter-spacing: 0.1rem;
+  }
+
+  .gamecontainer {
+    gap: 2rem;
+    width: fit-content;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 36px 0px;
     background: rgba(65, 147, 223, 0.2);
   }
 
@@ -559,5 +670,27 @@ form .account-details .input-field {
     flex-direction: column;
     gap: 8px;
     margin: 0;
+  }
+
+  .browse-games {
+    margin: auto 84px;
+    padding: 10px;
+    position: relative;
+    min-width: 520px;
+  }
+
+  .checkout-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+    /* left: 226px;
+    top: 380px; */
+    background: #f7fafc;
+    padding: 36px auto;
+    border-radius: 12px;
   }
 }
