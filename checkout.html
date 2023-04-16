@@ -15,7 +15,7 @@
     />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="checkout" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
@@ -24,7 +24,7 @@
       src="https://kit.fontawesome.com/2435774798.js"
       crossorigin="anonymous"
     ></script>
-    <title>GameHub</title>
+    <title>GameHub - Checkout</title>
   </head>
   <body>
     <header>
@@ -219,26 +219,40 @@
         </div>
         <div class="confirm-container">
           <img src="images/thumb-1920-1151249.jpg" alt="Elden Ring" />
-          <span class="left">Subtotal (1 item)</span>
-          <span class="right">US $39.00</span>
-          <h3>Elden Ring: Deluxe Edition</h3>
-          <h2 class="left">Order total</h2>
-          <h2 class="right">US $39.00</h2>
-          <button class="atcbutton">Confirm and pay</button>
+          <p class="subtot">Subtotal (1 item)<span>US $39.00</span></p>
+          <p>Elden Ring: Deluxe Edition</p>
+          <svg
+            class="confirm-line"
+            width="421"
+            height="1"
+            viewBox="0 0 421 1"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line x1="10" y1="0.5" x2="421" y2="0.5" stroke="#E2E8F0" />
+          </svg>
+
+          <p class="ordertot">Order total<span>US $39.00</span></p>
+          <a href="success.html"
+            ><button class="atcbutton">
+              <svg
+                width="17"
+                height="21"
+                viewBox="0 0 17 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.8 7.4V6.48571C2.8 3.4468 5.20857 1 8.2 1C11.1914 1 13.6 3.4468 13.6 6.48571V7.4M2.8 7.4C1.81 7.4 1 8.22286 1 9.22857V18.3714C1 19.3771 1.81 20.2 2.8 20.2H13.6C14.59 20.2 15.4 19.3771 15.4 18.3714V9.22857C15.4 8.22286 14.59 7.4 13.6 7.4M2.8 7.4H13.6M8.2 11.9714C9.19 11.9714 10 12.7943 10 13.8C10 14.8057 9.19 15.6286 8.2 15.6286C7.21 15.6286 6.4 14.8057 6.4 13.8C6.4 12.7943 7.21 11.9714 8.2 11.9714Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                />
+              </svg>
+              Confirm and pay
+            </button></a
+          >
         </div>
       </div>
-
-      <!-- <h1>Checkout</h1>
-      <h2>Account details</h2>
-      <h3>Email address</h3>
-      <h3>Password</h3>
-      <h2>Payment Options</h2>
-      <h3>Mastercard or Visa</h3>
-      <h3>Paypal</h3>
-      <h3>Google Pay</h3>
-      <h3>Subtotal (1 item) US $39.00</h3>
-      <h2>Elden Ring Deluxe Edition</h2>
-      <h2>Order total US $39.00</h2> -->
     </main>
     <footer>
       <a title="Logo" class="logo" href="index.html">Game<span>Hub</span></a>

@@ -49,7 +49,7 @@ nav {
   align-items: center;
   color: #fff;
   padding: 20px;
-  gap: 16rem;
+  gap: 8rem;
 }
 
 .navlinks a {
@@ -64,18 +64,13 @@ nav {
   text-transform: uppercase;
   font-weight: bold;
   list-style: none;
-  gap: 8rem;
-  /* padding: 8px 384px; */
+  gap: 4rem;
 }
-
-/* burger menu test */
 
 header label,
 #menu-checkbox {
   display: none;
 }
-
-/* burger menu test end - cont at media query */
 
 .navlinks,
 .icons,
@@ -83,7 +78,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 8px 20px; */
 }
 
 .searchbar {
@@ -120,10 +114,11 @@ header {
   fill: rgb(64, 166, 255);
 }
 
-/* media query */
+/* MEDIA CUTOFF */
 
 @media (max-width: 1200px) {
-  .searchbar {
+  .searchbar,
+  .icons {
     display: none;
   }
 
@@ -131,6 +126,9 @@ header {
     gap: 2rem;
   }
 }
+
+/* MOBILE CUTOFF */
+
 @media (max-width: 768px) {
   header {
     position: relative;
@@ -145,6 +143,10 @@ header {
     display: none;
     padding: 34px 10px;
     z-index: 9;
+  }
+
+  .icons {
+    display: flex;
   }
 
   #menu-checkbox:checked ~ .navlinks {

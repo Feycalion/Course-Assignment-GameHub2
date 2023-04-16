@@ -32,10 +32,9 @@ body {
   gap: 1rem;
   width: 600px;
   height: 560px;
-  min-width: 400px;
   position: relative;
   z-index: 1;
-  margin: 80px 80px;
+  margin: 80px 200px;
 
   background: rgba(65, 147, 223, 0.12);
   border-radius: 78px;
@@ -91,7 +90,7 @@ body {
 
 .sale-games {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
   gap: 8px;
@@ -100,9 +99,6 @@ body {
 
 .bloodbornetitle {
   display: flex;
-  /* flex-direction: column; */
-  /* align-items: center;
-  justify-content: center; */
   color: white;
   font-weight: bold;
   margin: 8px 0px;
@@ -133,8 +129,6 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  /* width: 100%;
-  min-width: 100%; */
 }
 
 .atc-container p {
@@ -202,42 +196,58 @@ body {
   display: flex;
 }
 
+.productpage .newscontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+  height: 460px;
+  position: relative;
+  z-index: 1;
+  margin: 10px 200px;
+
+  background: none;
+  border-radius: 78px;
+}
+
 .er-showcase img {
-  margin: 10px 100px;
+  margin: -64px 100px;
   position: absolute;
   z-index: 1;
 }
 
 .product-container {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
   position: relative;
   width: fit-content;
-  height: 516px;
-  left: 836px;
-  /* top: 400px; */
-  background: rgba(9, 58, 107, 0.5);
+  height: 416px;
+  left: 824px;
+  margin: 224px 0 48px 0;
+  background: rgba(5, 64, 76, 0.3);
   padding: 34px 34px;
   border-radius: 12px;
   font-size: 1.4rem;
 }
 
 .product-container p {
-  color: white;
-  /* padding: 20px 12px; */
   letter-spacing: 0.1rem;
   max-width: 600px;
-  margin-top: 1rem;
+  margin-top: 3rem;
   font-size: 1rem;
 }
 
 .product-container p,
 .product-container h1 {
-  margin-left: 3rem;
+  color: white;
+  margin-left: 4rem;
 }
 
+.product-container .atcbutton {
+  margin: 64px 0px;
+}
 /* GAMES PAGE */
 
 .browse-games {
@@ -252,6 +262,11 @@ body {
 
 .gamecontainer h2 {
   color: white;
+
+  /* display: flex; */
+  /* flex-direction: column; */
+  font-weight: bold;
+  margin: 8px 0px;
   text-shadow: 0px 0px 12px rgba(31, 100, 138, 0.7);
 }
 
@@ -264,12 +279,17 @@ body {
 
 .checkout-section {
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .main-checkout h1 {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
+  margin-top: 5%;
+  margin-left: 20%;
+  font-size: 2.6rem;
 }
 
 .checkout-container {
@@ -279,7 +299,7 @@ body {
   align-items: center;
   width: fit-content;
   height: fit-content;
-  margin: 100px auto 100px;
+  margin: 50px auto 100px;
   /* left: 226px;
   top: 380px; */
   background: #f7fafc;
@@ -369,7 +389,7 @@ form .account-details .input-field,
   /* align-items: center; */
   width: fit-content;
   height: fit-content;
-  margin: 100px auto 100px;
+  margin: 50px auto 100px;
   /* left: 226px;
   top: 380px; */
   background: #f7fafc;
@@ -383,8 +403,39 @@ form .account-details .input-field,
   border-radius: 48px;
 }
 
-.confirm-container .right {
-  margin-left: auto;
+.confirm-container p.subtot,
+.confirm-container p.ordertot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.confirm-container p.subtot {
+  color: rgba(149, 149, 149, 1);
+  font-size: 16px;
+  padding: 16px 36px;
+}
+
+.confirm-container p {
+  padding: 0px 36px;
+}
+
+.confirm-container .confirm-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+}
+
+.confirm-container .atcbutton {
+  text-transform: none;
+  margin: 36px 36px;
+  text-align: center;
+}
+
+.confirm-container .atcbutton svg {
+  padding: 0px 4px;
 }
 
 /* CHECKOUT SUCCESS PAGE */
@@ -397,12 +448,9 @@ form .account-details .input-field,
   width: 100%;
   max-width: 864px;
   height: 600px;
-  margin: 100px auto 100px;
-  /* left: 226px;
-  top: 380px; */
+  margin: 100px auto 200px;
   background: #f7fafc;
   padding: 50px 20px;
-  margin: 400px auto;
   border-radius: 12px;
   text-align: center;
   box-sizing: border-box;
@@ -423,20 +471,6 @@ form .account-details .input-field,
   color: white;
   text-shadow: 0px 0px 12px rgba(31, 100, 138, 0.7);
 }
-
-/* @media screen and (max-width: 768px) {
-  .checkout-success h2 {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .checkout-success {
-    width: 100%;
-    max-width: 600px;
-    padding: 50px 20px;
-  }
-} */
 
 /* ABOUT US PAGE */
 
@@ -560,11 +594,13 @@ form .account-details .input-field,
     flex-direction: column;
   }
 
+  .sale-games img {
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
   .bloodbornetitle {
     display: flex;
-    /* flex-direction: column; */
-    /* align-items: center;
-    justify-content: center; */
     color: white;
     font-weight: bold;
     margin: 8px 0px;
@@ -576,6 +612,64 @@ form .account-details .input-field,
     margin: -84px 46px;
     position: absolute;
     min-width: 520px;
+  }
+
+  .er-showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .er-showcase img {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin: 0;
+  }
+
+  .productpage .newscontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1;
+    width: 600px;
+    height: 360px;
+    min-width: 0px;
+    position: relative;
+    z-index: 1;
+    border-radius: 0;
+    margin: 184px 0 0 0px;
+
+    background: none;
+  }
+
+  .product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    left: auto;
+    margin: 24px;
+    background: rgba(9, 58, 107, 0.5);
+    padding: 34px 34px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+  }
+
+  .product-container p,
+  .product-container h1 {
+    color: white;
+    margin-left: 0;
+    padding: 16px 16px;
+  }
+
+  .product-container .atcbutton {
+    margin: 34px 0px;
   }
 
   .about-container h1,
@@ -601,10 +695,11 @@ form .account-details .input-field,
     min-width: 200px;
   }
 
-  /* .aboutpage .mapsection {
+  .checkout-section {
     display: flex;
-    flex-direction: row;
-  } */
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 /* MOBILE CUTOFF */
@@ -622,7 +717,6 @@ form .account-details .input-field,
     position: relative;
     z-index: 1;
     border-radius: 0;
-    padding: 10px;
     margin: 184px 0 0 0px;
 
     background: none;
@@ -658,7 +752,7 @@ form .account-details .input-field,
     gap: 2rem;
     width: fit-content;
     border-radius: 12px;
-    padding: 10px;
+    padding: 24px;
     margin: 36px 0px;
     background: rgba(65, 147, 223, 0.2);
   }
@@ -679,6 +773,55 @@ form .account-details .input-field,
     min-width: 520px;
   }
 
+  .productpage .newscontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1;
+    width: 100%;
+    height: 360px;
+    min-width: 0px;
+    position: relative;
+    z-index: 1;
+    border-radius: 0;
+    margin: 184px 0 0 0px;
+
+    background: none;
+  }
+
+  .product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .product-container p {
+    letter-spacing: 0.1rem;
+    max-width: 600px;
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .product-container p,
+  .product-container h1 {
+    color: white;
+    margin-left: 0;
+    padding: 16px 16px;
+  }
+
+  .product-container .atcbutton {
+    margin: 34px 0px;
+  }
+
+  .checkout-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   .checkout-container {
     display: flex;
     flex-direction: column;
@@ -692,5 +835,14 @@ form .account-details .input-field,
     background: #f7fafc;
     padding: 36px auto;
     border-radius: 12px;
+  }
+
+  .main-checkout h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 12%;
+    margin-left: 34%;
+    font-size: 2.6rem;
   }
 }

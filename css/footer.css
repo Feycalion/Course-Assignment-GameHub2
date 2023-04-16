@@ -18,5 +18,34 @@ footer ul {
   color: white;
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+@media (max-width: 1200px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  footer ul {
+    padding: 16px 40px;
+  }
+}
+
+/* MOBILE CUTOFF */
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  footer ul {
+    padding: 16px 40px;
+    white-space: nowrap;
+  }
 }
