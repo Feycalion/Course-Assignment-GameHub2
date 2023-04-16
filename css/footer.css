@@ -48,4 +48,13 @@ footer ul {
     padding: 16px 40px;
     white-space: nowrap;
   }
+
+  footer ul {
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+  }
 }
