@@ -117,8 +117,18 @@ header {
 /* MEDIA CUTOFF */
 
 @media (max-width: 1200px) {
-  .searchbar,
+  header {
+    position: relative;
+    padding: 20px 10px;
+    width: 100%;
+  }
+
   .icons {
+    display: flex;
+    margin-right: 3rem;
+  }
+
+  .searchbar {
     display: none;
   }
 
@@ -135,6 +145,11 @@ header {
     padding: 20px 10px;
   }
 
+  .searchbar,
+  .icons {
+    display: none;
+  }
+
   nav {
     padding: 0;
   }
@@ -143,10 +158,6 @@ header {
     display: none;
     padding: 34px 10px;
     z-index: 9;
-  }
-
-  .icons {
-    display: flex;
   }
 
   #menu-checkbox:checked ~ .navlinks {
@@ -164,11 +175,11 @@ header {
 
   header label {
     display: block;
-    color: white;
-    font-size: 1.5rem;
   }
 
-  .searchbar {
-    display: none;
+  header label {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
   }
 }

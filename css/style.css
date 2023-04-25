@@ -8,6 +8,8 @@ body {
     rgba(40, 102, 136, 1) 10%,
     rgba(21, 20, 36, 1) 96%
   );
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* NEWS CONTAINER */
@@ -602,6 +604,10 @@ form .account-details .input-field,
     flex-direction: column;
   }
 
+  .ernews {
+    width: 100%;
+  }
+
   .sale-games img {
     border-radius: 12px;
     max-width: 100%;
@@ -863,5 +869,36 @@ form .account-details .input-field,
     border: none;
     padding-left: 16px;
     background: rgba(226, 232, 240, 1);
+  }
+}
+
+@media (max-width: 400px) {
+  .newscontainer svg {
+    width: 200px;
+    min-width: 30px;
+  }
+
+  .heart-button svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+  }
+
+  .newscontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1;
+    width: 100%;
+    height: 260px;
+    min-width: 0px;
+    position: relative;
+    z-index: 1;
+    border-radius: 0;
+    margin: 184px 0 0 0px;
+
+    background: none;
   }
 }
