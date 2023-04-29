@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  /* border: 1px solid rgb(139, 32, 32); */
+  /*border: 1px solid rgb(139, 32, 32); */
 }
 
 body {
@@ -112,70 +112,4 @@ header {
 
 .icons svg:hover {
   fill: rgb(64, 166, 255);
-}
-
-/* MEDIA CUTOFF */
-
-@media (max-width: 1200px) {
-  header {
-    position: relative;
-    padding: 20px 10px;
-    width: 100%;
-  }
-
-  .icons {
-    display: flex;
-    margin-right: 3rem;
-  }
-
-  .searchbar {
-    display: none;
-  }
-
-  nav {
-    gap: 2rem;
-  }
-}
-
-/* MOBILE CUTOFF */
-
-@media (max-width: 768px) {
-  header {
-    position: relative;
-    padding: 20px 10px;
-  }
-
-  .searchbar,
-  .icons {
-    display: none;
-  }
-
-  nav {
-    padding: 0;
-  }
-
-  .navlinks {
-    display: none;
-    padding: 34px 10px;
-    z-index: 9;
-  }
-
-  #menu-checkbox:checked ~ .navlinks {
-    display: block;
-    position: absolute;
-    background-color: black;
-    top: 100%;
-    left: 0;
-    width: 100%;
-  }
-
-  .navlinks li {
-    margin-bottom: 2rem;
-  }
-
-  header label {
-    display: block;
-    color: white;
-    font-size: 1.5rem;
-  }
 }

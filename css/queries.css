@@ -1,0 +1,391 @@
+/* MEDIA CUTOFF */
+
+@media (max-width: 1200px) {
+  header {
+    position: relative;
+    padding: 20px 10px;
+    width: 100%;
+  }
+
+  .icons {
+    display: flex;
+    margin-right: 3rem;
+  }
+
+  .searchbar {
+    display: none;
+  }
+
+  nav {
+    gap: 2rem;
+  }
+
+  .gamecontainer {
+    margin: 164px auto;
+    flex-direction: column;
+  }
+
+  .ernews {
+    width: 100%;
+  }
+
+  .sale-games img {
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .bloodbornetitle {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    margin: 8px 0px;
+    font-size: 24px;
+    letter-spacing: 0.1rem;
+  }
+
+  .browse-games {
+    font-size: 2rem;
+    margin: 2rem;
+    margin-left: 10px;
+    position: relative;
+    min-width: 0px;
+  }
+
+  .er-showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .er-showcase img {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin: 0;
+  }
+
+  .productpage .newscontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1;
+    width: 600px;
+    height: 360px;
+    min-width: 0px;
+    position: relative;
+    z-index: 1;
+    border-radius: 0;
+    margin: 184px 0 0 0px;
+
+    background: none;
+  }
+
+  .product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    left: auto;
+    margin: 24px;
+    background: rgba(9, 58, 107, 0.5);
+    padding: 34px 34px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+  }
+
+  .product-container p,
+  .product-container h1 {
+    color: white;
+    margin-left: 0;
+    padding: 16px 16px;
+  }
+
+  .product-container .atcbutton {
+    margin: 34px 0px;
+  }
+
+  .about-container h1,
+  .aboutus-desc-container,
+  .map-section {
+    position: relative;
+  }
+
+  .about-container h1 {
+    left: 0;
+    margin: auto;
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+    text-shadow: 0px 0px 12px rgba(31, 100, 138, 0.7);
+  }
+
+  .aboutus-desc-container {
+    width: 100%;
+    height: fit-content;
+    left: 0;
+    top: 400px;
+    background: rgba(9, 58, 107, 0.5);
+    padding: 34px 34px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+  }
+
+  .aboutus-desc-container p {
+    color: white;
+    padding: 20px 12px;
+    letter-spacing: 0.1rem;
+  }
+
+  .aboutus-desc-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-container h1 {
+    top: 50px;
+  }
+
+  .aboutus-desc-container {
+    top: 80px;
+  }
+
+  .map-section {
+    margin: 7rem 0;
+    justify-content: center;
+  }
+
+  .map-section h2 {
+    min-width: 200px;
+  }
+
+  .checkout-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/* MOBILE CUTOFF */
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    padding: 20px 10px;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  .navlinks {
+    display: none;
+    padding: 34px 10px;
+    z-index: 9;
+  }
+
+  #menu-checkbox:checked ~ .navlinks {
+    display: block;
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  .navlinks li {
+    margin-bottom: 2rem;
+  }
+
+  header label {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .newscontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1;
+    width: 100%;
+    height: 460px;
+    min-width: 0px;
+    position: relative;
+    z-index: 1;
+    border-radius: 0;
+    margin: 184px 0 0 0px;
+
+    background: none;
+  }
+
+  .h2sale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 48px;
+    text-shadow: 0px 0px 12px rgba(31, 100, 138, 0.7);
+    margin: 36px 0;
+    /* padding-top: 20px; */
+    position: relative;
+  }
+
+  .bloodbornetitle {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center;
+      justify-content: center; */
+    color: white;
+    font-weight: bold;
+    margin: 8px 0px;
+    font-size: 24px;
+    letter-spacing: 0.1rem;
+  }
+
+  .gamecontainer {
+    gap: 2rem;
+    width: fit-content;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 36px 0px;
+    background: rgba(65, 147, 223, 0.2);
+  }
+
+  .sale-games {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+  }
+
+  .productpage .newscontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1;
+    width: 100%;
+    height: 360px;
+    min-width: 0px;
+    position: relative;
+    z-index: 1;
+    border-radius: 0;
+    margin: 184px 0 0 0px;
+
+    background: none;
+  }
+
+  .product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .product-container p {
+    letter-spacing: 0.1rem;
+    max-width: 600px;
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .product-container p,
+  .product-container h1 {
+    color: white;
+    margin-left: 0;
+    padding: 16px 16px;
+  }
+
+  .product-container .atcbutton {
+    margin: 34px 0px;
+  }
+
+  .checkout-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .checkout-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+    /* left: 226px;
+      top: 380px; */
+    background: #f7fafc;
+    padding: 36px 44px;
+    border-radius: 12px;
+  }
+
+  .main-checkout h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 12%;
+    margin-left: 34%;
+    font-size: 2.6rem;
+  }
+
+  .account-details .input-field input,
+  .payment-input {
+    height: 45px;
+    max-width: 300px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding-left: 16px;
+    background: rgba(226, 232, 240, 1);
+  }
+}
+
+@media (max-width: 400px) {
+  .newscontainer svg {
+    width: 200px;
+    min-width: 30px;
+  }
+
+  .heart-button svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+  }
+
+  .newscontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1;
+    width: 100%;
+    height: 260px;
+    min-width: 0px;
+    position: relative;
+    z-index: 1;
+    border-radius: 0;
+    margin: 184px 0 0 0px;
+
+    background: none;
+  }
+}
