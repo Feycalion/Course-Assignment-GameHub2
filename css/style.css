@@ -91,11 +91,9 @@ body {
 
 .sale-games {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
   gap: 1rem;
-  /* margin: 20px 80px; */
 }
 
 .bloodbornetitle {
@@ -264,8 +262,6 @@ body {
 .gamecontainer h2 {
   color: white;
   width: 100%;
-  /* display: flex; */
-  /* flex-direction: column; */
   font-weight: bold;
   margin: 8px 0px;
   text-shadow: 0px 0px 12px rgba(31, 100, 138, 0.7);
@@ -296,13 +292,10 @@ body {
 .checkout-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   align-items: center;
   width: fit-content;
   height: fit-content;
   margin: 50px auto 100px;
-  /* left: 226px;
-  top: 380px; */
   background: #f7fafc;
   padding: 36px 126px;
   border-radius: 12px;
@@ -387,12 +380,9 @@ form .account-details .input-field,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* align-items: center; */
   width: fit-content;
   height: fit-content;
   margin: 50px auto 100px;
-  /* left: 226px;
-  top: 380px; */
   background: #f7fafc;
   padding: 36px 0px 0px 0px;
   border-radius: 12px;
@@ -426,6 +416,7 @@ form .account-details .input-field,
   display: flex;
   align-items: center;
   justify-content: center;
+  width: fit-content;
   padding: 48px 16px;
 }
 
@@ -449,7 +440,7 @@ form .account-details .input-field,
   width: 100%;
   max-width: 864px;
   height: 600px;
-  margin: 100px auto 200px;
+  margin: 100px auto 30vh auto;
   background: #f7fafc;
   padding: 50px 20px;
   border-radius: 12px;
@@ -498,8 +489,6 @@ form .account-details .input-field,
 .aboutus-desc-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
   position: absolute;
   width: 500px;
   height: 816px;
@@ -543,11 +532,12 @@ form .account-details .input-field,
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
+  margin-bottom: 36px;
 }
 
 .main-contact h1 {
   margin-top: 100px;
-  /* margin-left: 324px; */
   font-size: 2.6rem;
   color: white;
   text-transform: uppercase;
@@ -562,8 +552,6 @@ form .account-details .input-field,
   width: 700px;
   height: 650px;
   margin: 100px auto 100px;
-  /* left: 226px;
-  top: 380px; */
   background: #f7fafc;
   padding: 25px 30px;
   border-radius: 12px;
@@ -595,5 +583,3 @@ form .account-details .input-field,
   margin: 20px 0;
   cursor: pointer;
 }
-
-/* MEDIA 1200 CUTOFF */
