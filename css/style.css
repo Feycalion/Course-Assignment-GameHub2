@@ -12,6 +12,105 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  min-height: 100vh;
+}
+
+/* spinner container */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* spinner animation */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* keyframes */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.imgstyle {
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+.result-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  border-radius: 78px;
+  padding: 4rem;
+  margin: 164px 200px;
+  background: rgba(65, 147, 223, 0.2);
+}
+
+.product-container-games {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+  border-radius: 78px;
+  padding: 4rem;
+  margin: 164px auto;
+  background: rgba(65, 147, 223, 0.2);
+  color: white;
+}
+
+.product-container img {
+  height: 300px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  transition: 0.3s ease;
+}
+
+.container:hover {
+  scale: 0.95;
+}
+
+.container a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.txtstyle {
+  color: white;
+}
+
+.txtstyle-discount {
+  text-decoration: line-through;
+  color: #f7fafcc5;
+}
+
 /* NEWS CONTAINER */
 
 .ernews {
@@ -104,7 +203,7 @@ body {
   font-size: clamp(0.75rem, 0.65rem + 0.5vw, 1.25rem);
 }
 
-.gamecontainer {
+/* .gamecontainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,7 +214,7 @@ body {
   padding: 4rem;
   margin: 164px 200px;
   background: rgba(65, 147, 223, 0.2);
-}
+} */
 
 .sale-games img {
   border-radius: 12px;
