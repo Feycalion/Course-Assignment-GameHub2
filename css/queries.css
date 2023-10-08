@@ -340,6 +340,16 @@
     margin: 34px 0px;
   }
 
+  .result-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border-radius: 78px;
+    padding: 4rem;
+    margin: 64px 12px;
+    background: rgba(65, 147, 223, 0.2);
+  }
+
   .checkout-section {
     display: flex;
     justify-content: center;

@@ -113,3 +113,8 @@ header {
 .icons svg:hover {
   fill: rgb(64, 166, 255);
 }
+
+/* Style the white box background */
+rect {
+  fill: white;
+}

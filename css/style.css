@@ -73,6 +73,12 @@ main {
   color: white;
 }
 
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .product-container img {
   height: 300px;
 }
@@ -282,6 +288,10 @@ main {
   width: 24px;
   height: 24px;
   padding: 5px;
+}
+
+.heart-button.clicked #heart-fill {
+  fill: white;
 }
 
 .heart-button {
