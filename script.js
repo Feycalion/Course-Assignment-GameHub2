@@ -1,6 +1,6 @@
 // https://api.noroff.dev/api/v1/gamehub
 
-const url = "http://flower-power.local/wp-json/wc/store/products";
+const url = "https://anjakvernenes.no/wp-json/wc/store/products";
 
 async function getGames() {
   const response = await fetch(url);

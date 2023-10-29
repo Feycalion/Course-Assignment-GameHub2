@@ -3,7 +3,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 async function getProductById(productID) {
-  const url = "http://flower-power.local/wp-json/wc/store/products/" + id;
+  const url = "https://anjakvernenes.no/wp-json/wc/store/products/" + id;
   const response = await fetch(url);
   const result = await response.json();
 
