@@ -1,4 +1,4 @@
-# GameHub
+# :joystick: GameHub
 
 ![Gamehub](https://github.com/Feycalion/Course-Assignment-GameHub2/assets/90476295/f23ddbdd-f563-4b01-a5da-ede0debce46d)
 
@@ -27,6 +27,10 @@ git clone https://github.com/Feycalion/Course-Assignment-GameHub2.git
 ### Run
 
 To run the app, install the Live Server extension on VSC and press Go Live.
+
+## Links
+
+:framed_picture: [Live Website](https://dashing-sprite-db5a2e.netlify.app/)
 
 ## Contact
 
