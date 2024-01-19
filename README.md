@@ -2,11 +2,9 @@
 
 ![Gamehub](https://github.com/Feycalion/Course-Assignment-GameHub2/assets/90476295/f23ddbdd-f563-4b01-a5da-ede0debce46d)
 
-## Description
-
 For this assignment I implemented everything everything I had learned about HTML and CSS so far into the fictional game store website "GameHub".
 
-## Assignment Brief
+## Description
 
 GameHub is an online shop where users can purchase computer games. This gaming marketplace lets you buy tons of video games online for any device. GameHub is a competitively priced website with a huge range of games.
 
